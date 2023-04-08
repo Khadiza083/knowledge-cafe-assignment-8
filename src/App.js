@@ -46,22 +46,22 @@ const[nameTitle, setNameTitle] = useState([])
         <Menubar></Menubar>
       </div>
 
-      <div className='flex mx-auto justify-center my-12 w-[80%]'>
-        <div className="home-container w-[60%] mr-2">
+      <div className='md:flex gap-6 mx-auto justify-center my-12 w-[80%]'>
+        <div className="home-container mr-2">
           <Blogs 
           blogs={blogs}
           readTimeHandler = {readTimeHandler}
           bookmarkedBlog ={bookmarkedBlog}
           quantity={quantity}></Blogs>
         </div>
-        <div className="sideCart w-[40%]">
+        <div className="sideCart ">
           <Sidecart 
           readTime = {readTime}
           quantity={quantity}
           nameTitle = {nameTitle}></Sidecart>
         </div>
       </div>
-      <div>
+      <div className='mx-auto w-[80%] text-left'>
         <Question></Question>
       </div>
 

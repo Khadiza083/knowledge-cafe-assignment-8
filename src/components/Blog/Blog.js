@@ -1,9 +1,13 @@
 import React from 'react';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBookmark } from '@fortawesome/free-solid-svg-icons'
-const Blog = ({ blog , readTimeHandler, bookmarkedBlog, quantity}) => {
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+const Blog = ({ blog, readTimeHandler, bookmarkedBlog, quantity }) => {
     const { image, authorName, publishDate, readTime, title } = blog
-    
+
 
     // console.log(a);
     return (
@@ -19,7 +23,8 @@ const Blog = ({ blog , readTimeHandler, bookmarkedBlog, quantity}) => {
                         </div>
                     </div>
                     <div>
-                        <p><span> 0{readTime} min read </span><button onClick={()=>bookmarkedBlog(quantity, blog)} ><FontAwesomeIcon icon={faBookmark} /></button></p>
+                        <p><span> 0{readTime} min read </span><button onClick={() =>{toast.success('successfully loaded')
+                            bookmarkedBlog(quantity, blog)} }><FontAwesomeIcon icon={faBookmark} /></button></p>
                     </div>
 
 
