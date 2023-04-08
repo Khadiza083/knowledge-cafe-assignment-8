@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Blog from '../Blog/Blog';
 
-const Blogs = ({blogs, readTimeHandler}) => {
+const Blogs = ({blogs, readTimeHandler, bookmarkedBlog, quantity}) => {
     // console.log(blogs);
 
     return (
@@ -10,7 +10,9 @@ const Blogs = ({blogs, readTimeHandler}) => {
                 blogs.map(blog => <Blog 
                     blog = {blog}
                     key = {blog.id}
-                    readTimeHandler ={readTimeHandler}></Blog>)
+                    readTimeHandler ={readTimeHandler}
+                    bookmarkedBlog ={bookmarkedBlog}
+                    quantity = {quantity}></Blog>)
             }
         </div>
     );

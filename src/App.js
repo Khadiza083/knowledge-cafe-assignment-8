@@ -4,6 +4,7 @@ import Menubar from './components/Menubar/Menubar';
 import Blogs from './components/Blogs/Blogs';
 import { useEffect, useState } from 'react';
 import Sidecart from './components/Sidecart/Sidecart';
+import Question from './components/Question/Question';
 
 function App() {
   const [blogs, setBlogs] = useState([])
@@ -29,6 +30,16 @@ function App() {
     }
 }
 
+const [quantity, setQuantity] = useState(0)
+const[nameTitle, setNameTitle] = useState([])
+    const bookmarkedBlog = (quantity, blog) =>{
+      setQuantity(quantity + 1)
+      const newBlogTitle = [...nameTitle,blog];
+      setNameTitle(newBlogTitle);
+      
+      
+    }
+
   return (
     <div className="App  w-[100%]" >
       <div className='mx-auto w-[80%]'>
@@ -40,11 +51,18 @@ function App() {
           <Blogs 
           blogs={blogs}
           readTimeHandler = {readTimeHandler}
-          ></Blogs>
+          bookmarkedBlog ={bookmarkedBlog}
+          quantity={quantity}></Blogs>
         </div>
         <div className="sideCart w-[40%]">
-          <Sidecart readTime = {readTime}></Sidecart>
+          <Sidecart 
+          readTime = {readTime}
+          quantity={quantity}
+          nameTitle = {nameTitle}></Sidecart>
         </div>
+      </div>
+      <div>
+        <Question></Question>
       </div>
 
     </div>
