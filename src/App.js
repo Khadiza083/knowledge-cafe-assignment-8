@@ -7,14 +7,26 @@ import Sidecart from './components/Sidecart/Sidecart';
 
 function App() {
   const [blogs, setBlogs] = useState([])
+  const [readTime, setReadTime] = useState(0)
   useEffect(() => {
     fetch("./data.json")
       .then(res => res.json())
       .then(data => setBlogs(data))
   }, [])
 
-  const readTimeHandler = (readTime) =>{
-    console.log(readTime);
+  const readTimeHandler = (time) =>{
+    const previousReadTime = JSON.parse(localStorage.getItem('readTime'))
+    console.log(previousReadTime);
+
+    if(previousReadTime){
+      const sum = previousReadTime + time
+      localStorage.setItem('readTime', sum)
+      setReadTime(sum)
+    }
+    else{
+      localStorage.setItem('readTime', time)
+      setReadTime(time)
+    }
 }
 
   return (
@@ -31,7 +43,7 @@ function App() {
           ></Blogs>
         </div>
         <div className="sideCart w-[40%]">
-          <Sidecart></Sidecart>
+          <Sidecart readTime = {readTime}></Sidecart>
         </div>
       </div>
 
