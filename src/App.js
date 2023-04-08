@@ -7,7 +7,7 @@ import Sidecart from './components/Sidecart/Sidecart';
 
 function App() {
   const [blogs, setBlogs] = useState([])
-  const [readTime, setReadTime] = useState(0)
+  const [readTime, setReadTime] = useState("")
   useEffect(() => {
     fetch("./data.json")
       .then(res => res.json())
