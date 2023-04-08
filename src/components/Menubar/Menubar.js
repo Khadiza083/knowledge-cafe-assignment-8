@@ -3,7 +3,7 @@ import siteLogo from "./../../images/user-1.png"
 const Menubar = () => {
     return (
         <div>
-            <div className='flex justify-around m-5 items-center border-b-2'>
+            <div className='flex justify-between m-auto items-center border-b-2'>
                 <h2 className='font-semibold text-2xl'>AfraTech Solutions</h2>
                 <ul className='flex justify-between items-center gap-5'>
                     <li><a href="\Home">Home</a></li>

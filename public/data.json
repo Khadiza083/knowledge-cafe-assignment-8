@@ -1,49 +1,49 @@
 [
     {
-      "id": "1",
+      "id": 1,
       "authorName": "April Luna",
       "title": "How to get your first job as a self-taught programmer",
       "image" : {
         "coverPage": "https://img.freepik.com/premium-photo/various-computer-equipment-with-programming-code-screens-table-dark-room-cyber-security-concept-copy-space_236854-23136.jpg?w=740",
-        "authorImage": ""
+        "authorImage": "https://img.freepik.com/premium-vector/anonymous-user-circle-icon-vector-illustration-flat-style-with-long-shadow_520826-1931.jpg?w=740"
       },
-      "readTime": "4",
+      "readTime": 4,
       "publishDate": "Mar 14 (4 Days ago)"
       
     },
     {
-      "id": "2",
+      "id": 2,
       "authorName": "Young Bond",
       "title": "How to get your first job as a self-taught programmer",
       "image" : {
         "coverPage": "https://img.freepik.com/free-vector/programer-learning-programming-languages-by-computer-laptop-website-tutorial-channel-online-education-class-vector-illustration-software-development-programming-languages-learning_1150-55428.jpg?w=740&t=st=1680883510~exp=1680884110~hmac=100cffe2124cf214da0ade8fbb9a7e7ef9486a4481281c914adcd42198878a5e",
-        "authorImage": ""
+        "authorImage": "https://img.freepik.com/premium-vector/blue-green-circle-with-person-icon-it_816425-2573.jpg?w=740"
       },
-      "readTime": "5",
+      "readTime": 5,
       "publishDate": "Mar 14 (4 Days ago)"
       
     },
     {
-      "id": "3",
+      "id": 3,
       "authorName": "Anthony Bean",
       "title": "How to get your first job as a self-taught programmer",
       "image" : {
         "coverPage": "https://img.freepik.com/free-photo/programming-background-collage_23-2149901789.jpg?w=740&t=st=1680883472~exp=1680884072~hmac=9781936ab1e1d7e14d361ef5944945d66940e4ad7bda1d27a6de715c6726cdc5",
-        "authorImage": ""
+        "authorImage": "https://img.freepik.com/premium-vector/avatar-profile-icon_188544-4755.jpg?w=740"
       },
-      "readTime": "7",
+      "readTime": 7,
       "publishDate": "Mar 14 (4 Days ago)"
       
     },
     {
-      "id": "4",
+      "id": 4,
       "authorName": "Cabrera Randolph",
       "title": "How to get your first job as a self-taught programmer",
       "image" : {
         "coverPage": "https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg?w=740&t=st=1680883416~exp=1680884016~hmac=7dabd39feea94ca6f8f3edfa0d0383df704625a620b39eb242f365075b643d5d",
-        "authorImage": ""
+        "authorImage": "https://img.freepik.com/premium-vector/young-smiling-man-adam-avatar-3d-vector-people-character-illustration-cartoon-minimal-style_365941-687.jpg?w=740"
       },
-      "readTime": "3",
+      "readTime": 3,
       "publishDate": "Mar 14 (4 Days ago)"
       
     }
