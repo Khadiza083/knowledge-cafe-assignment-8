@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 
-const Sidecart = () => {
+const Sidecart = (newReadTime) => {
     const [totalReadTime, setTotalReadTime] = useState(0)
+    
     return (
         <div>
             <div className='border-2 mb-4'>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Blog from '../Blog/Blog';
 
-const Blogs = ({blogs}) => {
+const Blogs = ({blogs, readTimeHandler}) => {
     // console.log(blogs);
 
     return (
@@ -9,7 +9,8 @@ const Blogs = ({blogs}) => {
             {
                 blogs.map(blog => <Blog 
                     blog = {blog}
-                    key = {blog.id}></Blog>)
+                    key = {blog.id}
+                    readTimeHandler ={readTimeHandler}></Blog>)
             }
         </div>
     );

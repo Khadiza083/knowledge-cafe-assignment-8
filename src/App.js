@@ -12,6 +12,11 @@ function App() {
       .then(res => res.json())
       .then(data => setBlogs(data))
   }, [])
+
+  const readTimeHandler = (readTime) =>{
+    console.log(readTime);
+}
+
   return (
     <div className="App  w-[100%]" >
       <div className='mx-auto w-[80%]'>
@@ -20,7 +25,10 @@ function App() {
 
       <div className='flex mx-auto justify-center my-12 w-[80%]'>
         <div className="home-container w-[60%] mr-2">
-          <Blogs blogs={blogs}></Blogs>
+          <Blogs 
+          blogs={blogs}
+          readTimeHandler = {readTimeHandler}
+          ></Blogs>
         </div>
         <div className="sideCart w-[40%]">
           <Sidecart></Sidecart>
